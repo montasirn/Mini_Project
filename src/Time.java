@@ -46,8 +46,6 @@ public class Time {
         hours = (df.format(h));
         minutes = (df.format(m));
         seconds = (df.format(s));
-
-        time = hours + ":" + minutes + ":" + seconds;
     }
 
     /**
@@ -72,7 +70,6 @@ public class Time {
                 }
             }
         }
-        time = hours + ":" + minutes + ":" + seconds;
     }
 
     /**
@@ -80,6 +77,7 @@ public class Time {
      * @return time as a string ##:##:##
      */
     public String toString(){
+        time = hours + ":" + minutes + ":" + seconds;
         return time;
     }
 
@@ -118,7 +116,5 @@ public class Time {
         seconds = df.format(Integer.parseInt(seconds));
         minutes = df.format(Integer.parseInt(minutes));
         hours = df.format(Integer.parseInt(hours));
-
-        time = hours + ":" + minutes + ":" + seconds;
     }
 }
